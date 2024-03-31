@@ -58,7 +58,7 @@ async function initPano() {
     },
   );
     
-    
+  /*
   //Create "New Game" control button in top right corner of panorama
   var newGameControlDiv = document.createElement("div");
   tempControlUI = createControl(newGameControlDiv, "Starts a New Game Session", "New Game", "5px", "25px");
@@ -75,7 +75,7 @@ async function initPano() {
   		submitGuess();
   });
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(submitControlDiv);
-  
+  */
       
   map.setStreetView(panorama);
   
@@ -105,9 +105,12 @@ async function initPano() {
   });
   */
   
+  /*
   mapClickListener = google.maps.event.addListener(map, 'click', function(event) {
   	moveMarker(event.latLng);
   });
+  */
+  
   
   //Generate as many random street view locations as iMaxCount + set markers on map
   for (let iCount = 0; iCount < iMaxCount; iCount++) {
