@@ -19,7 +19,7 @@ Version:
 
 var startTime, path, panorama, startLoc, currentLatLong, tempControlUI, mapClickListener, panPosition;
 let map, guessMarker, targetMarker, targetPath, replyText;
-var iMaxCount = 10;
+var iMaxCount = 200;
 
 const zeroPosition = { lat: 0, lng: 0 };
 
@@ -87,7 +87,9 @@ async function initPano() {
 	borderColor: "black",
 	glyphColor: "black",
   });
-    
+  
+  
+  /*
   //Create marker for guessing
   guessMarker = new AdvancedMarkerElement({
     map: map,
@@ -95,6 +97,8 @@ async function initPano() {
 	title: "My guess",
 	content: pinGuessMarker.element,
   });
+  */
+  
   
   /*
   //legacy marker (old version)
