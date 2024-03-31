@@ -6,20 +6,20 @@
 
 /*
 Description:
-
+Gets iMAxCount valid StreetView locations + shows markers on map
 
 Manual:
 
 
 Version:
-29.03.24
-20:59
+31.03.24
+16:15
 
 */
 
 var startTime, path, panorama, startLoc, currentLatLong, tempControlUI, mapClickListener, panPosition;
 let map, guessMarker, targetMarker, targetPath, replyText;
-var iMaxCount = 200;
+var iMaxCount = 500;
 
 const zeroPosition = { lat: 0, lng: 0 };
 
@@ -79,7 +79,7 @@ async function initPano() {
       
   map.setStreetView(panorama);
   
-  
+  /*
   //Create PinElement for guessMarker
   const pinGuessMarker = new PinElement({
   	scale: 0.7,
@@ -89,7 +89,7 @@ async function initPano() {
   });
   
   
-  /*
+  
   //Create marker for guessing
   guessMarker = new AdvancedMarkerElement({
     map: map,
@@ -174,7 +174,7 @@ async function processSVData(data, status)
 			
 		//Create PinElement for targetMarker
   		const pinTargetMarker = new PinElement({
-			scale: 0.5,
+			scale: 0.3,
 			background: "orange",
 			borderColor: "black",
 			glyphColor: "black",
